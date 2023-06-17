@@ -1,10 +1,9 @@
 import React from 'react'
-import Main from '../Components/Main'
-
+import FirstHeader from '../FIrstHeader'
 export default function index() {
   return (
     <div>
-      <Main/>
+        <FirstHeader/>
     </div>
   )
 }
