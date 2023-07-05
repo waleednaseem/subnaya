@@ -10,8 +10,11 @@ import { BiSolidCartAlt } from 'react-icons/bi';
 
 export default function index() {
   const logo = 'images/logo-img.svg'
-  const first_pic = 'images/jewel.jpg'
-  
+  const first_pic = 'images/jewel.jpg';
+  const second_pic = 'images/jewel-2.jpg';
+  const third_pic = 'images/jewel-3.jpg';
+  const fourth_pic = 'images/jewel-4.jpg';
+
   const array=[
     {
       id:1,
@@ -21,8 +24,22 @@ export default function index() {
     },
     {
       id:2,
-      name:"kundan",
-      image:first_pic,
+      name:"Diamond",
+      image:second_pic,
+      content:'this is my content'
+    },
+
+    {
+      id:3,
+      name:"Diamond ring",
+      image:third_pic,
+      content:'this is my content'
+    },
+
+    {
+      id:4,
+      name:"Diamond necklace",
+      image: fourth_pic,
       content:'this is my content'
     },
   ]
@@ -82,13 +99,15 @@ export default function index() {
             </ul>
           </div>
 
-          <div className='w-[70%] border-4 rounded-lg border-slate-700  px-2 py-2' >
-            <div className=' w-32 p-2 flex justify-center items-center flex-col border-4 rounded-lg border-slate-400 '>
-              <img src='images/jewel.jpg' width={100} />
+          <div className='w-[70%] grid grid-cols-5 gap-2 border-4 rounded-lg border-slate-700  px-2 py-2' >
+            {array.map(x=>(
+              <div key={x.id} className=' w-full h-56  flex  flex-col border-4 rounded-lg border-slate-400 '>
+              <img src={x.image} className='w-full h-44' />
               <div className='text-sm  text-cyan-50'>
-                <p>Threads & Motifs Pret Embroidered Organza Peplum Dress 8395.2</p>
+                <p>{x.content}</p>
                 </div>
             </div>
+            ))}
           </div>
         </div>
       </div>
