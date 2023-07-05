@@ -1,8 +1,8 @@
 import React from 'react'
-import FirstHeader from '../FIrstHeader'
+import FirstHeader from '../FirstHeader'
 export default function index() {
   return (
-    <div>
+    <div className='pb-3'>
         <FirstHeader/>
     </div>
   )

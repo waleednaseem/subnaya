@@ -6,7 +6,8 @@ export default function index() {
   return (
     <div>
         <LeftHeader/>
-        <RightHeader/>
+        {/* <RightHeader/> */}
+        
     </div>
   )
 }
