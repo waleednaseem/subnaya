@@ -5,16 +5,19 @@ module.exports = {
     "./Components/FirstHeader/**/*.{js,ts,jsx,tsx,mdx}",
     "./Components/Main/**/*.{js,ts,jsx,tsx,mdx}",
     "./Components/NavigationBar/**/*.{js,ts,jsx,tsx,mdx}",
-    "./Components/SecondHeader/**/*.{js,ts,jsx,tsx,mdx}",
+    "./Components/SearchPanel/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
-      colors :{
-        bgTopcolor : "#0b0e0b",
-        pinkColor :"#ed2590",
-        goldColor: "#ffd700",
-        whiteColor: "#fff"
+      colors: {
+        primary: "var(--primary-color)",
+        secondary: "var(--secondary-color)",
+        tertiary: "var(--tertiary-color)",
+        quaternary: "var(--quaternary-color)",
+        quinary: "var(--quinary-color)",
+        bgprimary: "var(--bg-color)",
+        textColor: "var(--text-color)"
       },
       fontFamily :{
         Montserrat: ["Montserrat", "sans-serif"],

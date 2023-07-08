@@ -1,16 +1,19 @@
-import React from 'react'
+import React,{useState} from 'react'
 import Main from '../Components/Main'
 import SearchPanel from '../Components/SearchPanel'
 import NavigationBar from '@/Components/NavigationBar'
 import SecondHeader from '../Components/SecondHeader'
 
 export default function index() {
+  const [searchbox,setSearchBox]=useState(false)
   return (
     <div>
       <Main />
-      <NavigationBar />
+      <NavigationBar setSearchBox={setSearchBox} />
       {/* <SecondHeader /> */}
-      <SearchPanel />
+      {searchbox?<div className=''>
+        <SearchPanel setSearchBox={setSearchBox} />
+      </div>:""}
     </div>
   )
 }

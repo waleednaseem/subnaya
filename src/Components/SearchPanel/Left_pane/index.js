@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function index() {
     return (
-        <div className='w-[30%] border-4 p-2   rounded-lg py-5' >
+        <div className='w-[30%] border-4  p-2  rounded-lg py-5' >
             <h5 className='text-2xl  capitalize mb-3 text-black font-semibold border-b-4  border-slate-700 '>releted categories </h5>
             <ul className='capitalize mb-3  text-slate-50 font-medium'>
                 <li className='leading-7'>sha Unstitched Luxe Atelier Edit 2 2023</li>
