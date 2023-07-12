@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Carousel from 'react-grid-carousel'
 export default function index() {
     const brand_img1 = 'images/brand-1.jpg';
     const brand_img2 = 'images/brand-2.jpg';
@@ -56,13 +56,13 @@ export default function index() {
             <div className='w-[10%] border-t-4 rounded-lg  border-pink-600'>
             </div>
 
-            <div className='flex m-2'>
-                {
-                    arrayProduct.map(item => (
-                        <div className=' w-[20%]  flex'>
-                            <div className='mt-5'>
+            <div className='flex m-2 w-full'>
+                <Carousel cols={4} rows={1} gap={10} loop>
+                    {
+                        arrayProduct.map(item => (
+                            <Carousel.Item>
                                 <div>
-                                    <img src={item.image} className='w-[100%] h-80 object-cover rounded-sm' />
+                                    <img src={item.image} className='w-[100%] h-96 object-cover rounded-sm' />
                                 </div>
                                 <div className=' text-xs text-contentColor  font-medium font-Montserrat mt-1'>
                                     <p>{item.content}</p>
@@ -75,14 +75,10 @@ export default function index() {
                                         </strong>
                                     </div>
                                 </div>
-                            </div>
-
-
-                        </div>
-                        
-                    ))
-
-                }
+                            </Carousel.Item>
+                        ))
+                    }
+                </Carousel>
             </div>
         </div>
     )

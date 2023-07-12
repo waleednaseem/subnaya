@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./Components/FirstHeader/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,6 +9,10 @@ module.exports = {
     "./Components/NavigationBar/**/*.{js,ts,jsx,tsx,mdx}",
     "./Components/SearchPanel/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+
+    //material tailind
+    "path-to-your-node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}",
+    "path-to-your-node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -29,5 +35,5 @@ module.exports = {
     },
   },
   plugins: [],
-}
+})
 

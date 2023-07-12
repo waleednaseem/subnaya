@@ -1,5 +1,6 @@
 import React from 'react'
 import Categories_Items from '../Right_pane/productItems/Categories_Items'
+// import Carousel from 'react-grid-carousel'
 
 export default function index() {
   const first_pic = 'images/jewel.jpg';
@@ -57,18 +58,16 @@ export default function index() {
       content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
     }
   ]
-  
+
   return (
 
     <div className='w-[70%]  border-2 rounded-lg   border-gray-300  px-2 py-2' >
       <h5 className=' text-base  font-Montserrat capitalize mb-2 text-black font-semibold'>Products </h5>
-      <div className='w-[8%] border-t-4 rounded-lg  mb-6  border-pink-600'>
 
-      </div>
       <div className='grid grid-cols-5  gap-2'>
-        {array.map(x => (
-          <Categories_Items x={x} />
-        ))}
+          {array.map(x => (
+            <Categories_Items x={x} Carousel={Carousel} />
+          ))}
       </div>
 
     </div>
