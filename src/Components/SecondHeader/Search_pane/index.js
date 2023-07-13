@@ -6,7 +6,7 @@ export default function index({setSearchBox}) {
   return (
     <div>
       {/*SECOND   */}
-      <div className='flex border border-gray-400 rounded-full items-center px-6 py-1  w-[60%]'>
+      <div className='flex border border-gray-400 rounded-full items-center px-6 py-1  w-[90%]'>
         <input className="required  w-full outline-none  " 
         // onBlur={()=>setSearchBox(false)}
         onFocus={()=>setSearchBox(true)}

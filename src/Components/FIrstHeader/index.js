@@ -4,7 +4,8 @@ import LeftHeader from './LeftHeader'
 export default function index() {
   return (
     <div>
-        <LeftHeader/>        
+        <LeftHeader/>   
+           
     </div>
   )
 }

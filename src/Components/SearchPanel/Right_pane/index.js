@@ -14,59 +14,64 @@ export default function index() {
       id: 1,
       name: "kundan",
       image: first_pic,
-      content: 'this is my content'
+      content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
     },
     {
       id: 2,
       name: "Diamond",
       image: second_pic,
-      content: 'this is my content'
+      content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
     },
 
     {
       id: 3,
       name: "Diamond ring",
       image: third_pic,
-      content: 'this is my content'
+      content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
     },
 
     {
       id: 4,
       name: "Diamond necklace",
       image: fourth_pic,
-      content: 'this is my content'
+      content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
     },
     {
       id: 5,
-      name: "necklace jewellary",
+      name: "necklace brands",
       image: fifth_pic,
-      content: 'this is my content'
+      content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
     },
 
     {
       id: 6,
       name: "ear rings",
       image: sixth_pic,
-      content: 'this is my content'
+      content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
     },
 
     {
       id: 7,
       name: "jewellary",
       image: seventh_pic,
-      content: 'this is my content'
+      content: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
     }
-
   ]
-
+  
   return (
-    
-    <div className='w-[70%] grid grid-cols-5 gap-2 border-4 rounded-lg border-slate-700  px-2 py-2' >
-     
+
+    <div className='w-[70%]  border-2 rounded-lg   border-gray-300  px-2 py-2' >
+      <h5 className=' text-base  font-Montserrat capitalize mb-2 text-black font-semibold'>Products </h5>
+      <div className='w-[8%] border-t-4 rounded-lg  mb-6  border-pink-600'>
+
+      </div>
+      <div className='grid grid-cols-5  gap-2'>
         {array.map(x => (
           <Categories_Items x={x} />
         ))}
       </div>
-  
+
+    </div>
+
   )
 }

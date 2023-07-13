@@ -7,7 +7,7 @@ export default function index({setSearchBox}) {
   return (
     <div className=' w-[100%]  flex  justify-center flex-col'>
     <div onClick={()=>setSearchBox(false)} className=' w-[100%] flex justify-end px-5' >X</div>
-    <div className='flex bg-bgprimary'>
+    <div className='flex  bg-white'>
         <Left_pane/>
         <Right_pane/>
         </div>

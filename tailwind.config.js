@@ -17,7 +17,10 @@ module.exports = {
         quaternary: "var(--quaternary-color)",
         quinary: "var(--quinary-color)",
         bgprimary: "var(--bg-color)",
-        textColor: "var(--text-color)"
+        textColor: "var(--text-color)",
+        pinkColor: "var(--pink-color)",
+        grayColor: "var( --gray-color)",
+        contentColor:"var(--contentColor)"
       },
       fontFamily :{
         Montserrat: ["Montserrat", "sans-serif"],

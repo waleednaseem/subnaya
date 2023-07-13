@@ -9,7 +9,6 @@ export default function index() {
         <Logo_pane/>
         <My_account/>
         <Search_pane/>
-
     </div>
   )
 }

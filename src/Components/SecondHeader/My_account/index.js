@@ -6,7 +6,6 @@ export default function
 () {
   return (
     <div>
-        
            {/* THIRD */}
            < div className='flex  items-center'>
             <ul className=''>
