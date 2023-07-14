@@ -4,6 +4,7 @@ import SearchPanel from '../Components/SearchPanel'
 import NavigationBar from '@/Components/NavigationBar'
 import SecondHeader from '../Components/SecondHeader'
 import MushqBanner from '@/Components/MushqBanner'
+import JofaHeader from '@/Components/JofaHeader'
 
 export default function index() {
   const [searchbox,setSearchBox]=useState(false)
@@ -16,6 +17,7 @@ export default function index() {
         <SearchPanel setSearchBox={setSearchBox} />
       </div>:""}
       <MushqBanner/>
+      <JofaHeader/>
     </div>
   )
 }

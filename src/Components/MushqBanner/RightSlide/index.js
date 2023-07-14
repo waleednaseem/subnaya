@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default function index() {
     const brand_img1 = 'images/slide-img.jpg'; 
     const arrayProducts = [
