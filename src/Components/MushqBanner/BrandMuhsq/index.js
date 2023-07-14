@@ -55,13 +55,12 @@ export default function index() {
             <h5 className=' text-base  font-Montserrat capitalize mb-2 text-black font-semibold'>Sales and Discounts  </h5>
             <div className='w-[10%] border-t-4 rounded-lg  border-pink-600'>
             </div>
-
             <div className='flex m-2 w-full'>
-                <Carousel cols={4} rows={1} gap={10} loop>
+                <Carousel cols={4} rows={1} gap={10} >
                     {
-                        arrayProduct.map(item => (
-                            <Carousel.Item>
-                                <div>
+                        arrayProduct.map((item,index) => (
+                                <Carousel.Item>
+                                <div key={index}>
                                     <img src={item.image} className='w-[100%] h-96 object-cover rounded-sm' />
                                 </div>
                                 <div className=' text-xs text-contentColor  font-medium font-Montserrat mt-1'>
@@ -75,7 +74,7 @@ export default function index() {
                                         </strong>
                                     </div>
                                 </div>
-                            </Carousel.Item>
+                            </Carousel.Item> 
                         ))
                     }
                 </Carousel>
