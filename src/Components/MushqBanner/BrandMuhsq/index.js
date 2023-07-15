@@ -50,6 +50,58 @@ export default function index() {
         }
 
     ]
+
+  const listArray =[
+    {
+      id:1,
+      content:"Summer Collection"
+    }
+    ,
+    {
+      id:2,
+      content:"Ladies Wedding Dresses Collection"
+    }
+    ,{
+      id:3,
+      content:"Unstitched Suits"
+    },
+    {
+      id:4,
+      content:"Ladies Luxury Formal Dresses"
+    },
+
+    {
+      id:5,
+      content:"Pret Collection"
+    },
+    {
+      id:6,
+      content:"Cambric Collection"
+
+    }
+    , {
+      id:7,
+      content:"Cambric Collection"
+
+    },
+    {
+      id:8,
+      content:"Silk Collection"
+    },
+    {
+      id:9,
+      content:"Silk Collection"
+    },
+    {
+      id:10,
+      content:"Silk Collection"
+    },
+    {
+      id:11,
+      content:"Silk Collection"
+    }
+  ]
+
     return (
         <div className='w-[80%] border-4  p-2 bg-white  rounded-lg py-5' >
             <h5 className=' text-base  font-Montserrat capitalize mb-2 text-black font-semibold'>Sales and Discounts  </h5>

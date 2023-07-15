@@ -5,6 +5,7 @@ import NavigationBar from '@/Components/NavigationBar'
 import SecondHeader from '../Components/SecondHeader'
 import MushqBanner from '@/Components/MushqBanner'
 import JofaHeader from '@/Components/JofaHeader'
+import ProductComponent from '@/Components/ProductComponent'
 
 export default function index() {
   const [searchbox,setSearchBox]=useState(false)
@@ -18,6 +19,7 @@ export default function index() {
       </div>:""}
       <MushqBanner/>
       <JofaHeader/>
+      <ProductComponent/>
     </div>
   )
 }
