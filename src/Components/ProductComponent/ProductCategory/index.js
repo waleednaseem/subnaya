@@ -54,7 +54,7 @@ export default function index() {
 
   return (
     
-        <div className='w-[20%] border-2 '>
+        <div className='w-[20%] border-2  mt-10'>
           {
             listArray.map(list => (
               <ul className='px-2'>

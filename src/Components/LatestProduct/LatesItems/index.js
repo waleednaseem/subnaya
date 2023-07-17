@@ -1,6 +1,4 @@
 import React from 'react'
-import BottomSlide from '../BottomSlide';
-
 import Carousel from 'react-grid-carousel'
 export default function index() {
     const brand_img1 = 'images/brand-1.jpg';
@@ -51,14 +49,65 @@ export default function index() {
             content: 'Broadway Returns by Mushq Embroidered Khaddar Suits Unstitched 3 Piece MQ22BR MW22-04 Nur - Winter Collection'
         }
 
-    ] 
+    ]
+
+  const listArray =[
+    {
+      id:1,
+      content:"Summer Collection"
+    }
+    ,
+    {
+      id:2,
+      content:"Ladies Wedding Dresses Collection"
+    }
+    ,{
+      id:3,
+      content:"Unstitched Suits"
+    },
+    {
+      id:4,
+      content:"Ladies Luxury Formal Dresses"
+    },
+
+    {
+      id:5,
+      content:"Pret Collection"
+    },
+    {
+      id:6,
+      content:"Cambric Collection"
+
+    }
+    , {
+      id:7,
+      content:"Cambric Collection"
+
+    },
+    {
+      id:8,
+      content:"Silk Collection"
+    },
+    {
+      id:9,
+      content:"Silk Collection"
+    },
+    {
+      id:10,
+      content:"Silk Collection"
+    },
+    {
+      id:11,
+      content:"Silk Collection"
+    }
+  ]
+
     return (
-        <div className='w-[60%] border-4  p-2 bg-white  rounded-lg py-5' >
-            <h5 className=' text-base  font-Montserrat capitalize mb-2 text-black font-semibold'>Sales and Discounts  </h5>
-            <div className='w-[10%] border-t-4 rounded-lg  border-pink-600'>
-            </div>
+        <div className='w-[100%] border-4  p-2 bg-white  rounded-lg py-5' >
+            <h5 className=' text-lg  text-center font-Montserrat uppercase mt-4 mb-6 text-black font-semibold'>latest product </h5>
+        
             <div className='flex m-2 w-full'>
-                <Carousel cols={2} rows={1} gap={10} >
+                <Carousel cols={4} rows={1} gap={10} >
                     {
                         arrayProduct.map((item,index) => (
                                 <Carousel.Item>
@@ -81,7 +130,6 @@ export default function index() {
                     }
                 </Carousel>
             </div>
-            <BottomSlide/>
         </div>
     )
 }
