@@ -1,6 +1,13 @@
+import { button } from '@material-tailwind/react'
 import React from 'react'
+import { useState } from 'react'
 
 export default function index() {
+  const state = useState()
+  const count =1;
+  const InNum =()=>{
+
+  }
     const listArray =[
         {
           id:1,
@@ -62,8 +69,13 @@ export default function index() {
 
               </ul>
             ))
-
+    
           }
+          <div>
+            <h4></h4>
+          <button  onClick={InNum}>click me</button>
+          </div>
+         
         </div>
      
   )

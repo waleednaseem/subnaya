@@ -49,7 +49,7 @@ export default function index() {
                             <label class=" justify-items-end  flex">
                               
                                 <input type="email"   placeholder="Enter your Email" className=' font-Montserrat w-full py-2 px-2 bg-white border  focus:border-none  focus:outline-none  border-slate-300  text-sm shadow-sm placeholder-slate-400' />
-                              <button className=' text-white font-Montserrat text-sm font-medium  p-2 bg-deep-orange-900'>sumbit</button>
+                              <button className=' text-white font-Montserrat text-sm font-medium  p-2  bg-deep-orange-900'>sumbit</button>
                             </label>
                         </form>
 
