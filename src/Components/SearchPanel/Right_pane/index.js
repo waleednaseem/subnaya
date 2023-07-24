@@ -66,7 +66,7 @@ export default function index() {
 
       <div className='grid grid-cols-5  gap-2'>
           {array.map(x => (
-            <Categories_Items x={x} Carousel={Carousel} />
+            <Categories_Items x={x} />
           ))}
       </div>
 
