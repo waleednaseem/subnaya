@@ -107,11 +107,11 @@ export default function index() {
         <div className='w-[100%] border-4  p-2 bg-white  rounded-lg py-5' >
             <h5 className=' text-lg  text-center font-Montserrat uppercase mt-4 mb-6 text-black font-semibold'>latest product </h5>
         
-            <div className='flex m-2 w-full'>
-                <Carousel cols={4} rows={1} gap={10} >
+            <div className='flex m-2 w-full   -z-40'>
+                <Carousel cols={4} rows={1} gap={10}  >
                     {
                         arrayProduct.map((item,index) => (
-                                <Carousel.Item>
+                                <Carousel.Item >
                                 <div key={index}>
                                     <img src={item.image} className='w-[100%] h-96 object-cover rounded-sm' />
                                 </div>

@@ -19,9 +19,9 @@ export default function
 
         <Modal
           isOpen={ClosedModal}
-          style={''}
+          className={'m-auto w-[45%] shadow-md  outline-none my-8 h-[70%] overflow-y-auto  shadow-zinc-600 bg-white p-6 z-40'}
         >
-          <div onClick={() => setClosedModal(false)} className=' w-[100%] flex justify-end px-5' >X</div>
+          <div onClick={() => setClosedModal(false)} className='  w-[100%] flex justify-end px-5 cursor-pointer' >X</div>
           <div>
             <h4 className=' text-center text-4xl text-black  font-bold font-Montserrat mb-3 capitalize'>login</h4>
             <form className=''>
