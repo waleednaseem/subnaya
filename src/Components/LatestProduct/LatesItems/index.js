@@ -102,6 +102,7 @@ export default function index() {
     }
   ]
 
+
     return (
         <div className='w-[100%] border-4  p-2 bg-white  rounded-lg py-5' >
             <h5 className=' text-lg  text-center font-Montserrat uppercase mt-4 mb-6 text-black font-semibold'>latest product </h5>

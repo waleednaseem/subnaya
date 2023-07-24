@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function index() {
   return (
-    <div>RightSection</div>
+    <div className='bg-gray-200'>RightSection</div>
   )
 }

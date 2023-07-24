@@ -66,11 +66,7 @@ export default function index() {
 
       <div className='grid grid-cols-5  gap-2'>
           {array.map(x => (
-<<<<<<< HEAD
-            <Categories_Items x={x} />
-=======
             <Categories_Items x={x}  />
->>>>>>> 2896c0f763edb4799aa85c705dc3e5c273381363
           ))}
       </div>
 
