@@ -118,7 +118,6 @@ export default function index() {
         ))
         }
       </Carousel>
-       
     </div>
   )
 }
