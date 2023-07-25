@@ -4,6 +4,7 @@ import My_account from '../SecondHeader/My_account'
 import Logo_pane from '../SecondHeader/Logo_pane'
 
 export default function index({setSearchBox}) {
+  
   return (
     
     <div className='flex justify-center items-center flex-col'>

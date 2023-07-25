@@ -2,15 +2,13 @@ import React, { useState } from 'react'
 import { FaUserAlt } from 'react-icons/fa';
 import { BsChevronDown } from 'react-icons/bs';
 import { BiSolidCartAlt } from 'react-icons/bi';
-import { AiOutlineMessage } from 'react-icons/ai'
-import { AiOutlineEye } from 'react-icons/ai'
-import { AiOutlineUser } from 'react-icons/ai'
+
 
 import Modal from 'react-modal';
 import Login from '@/Components/Login_SignupModal/Login';
 import Signup from '@/Components/Login_SignupModal/Signup';
 export default function
-  () {
+  index() {
   const [ClosedModal, setClosedModal] = useState(false)
   const Menus = ["login", "track your order", "my wish list"]
   const [open, Setopen] = useState(false)
@@ -25,8 +23,7 @@ export default function
           className={'m-auto w-[45%] shadow-md  outline-none my-4 h-[70%] overflow-y-auto  shadow-zinc-600 bg-white p-6 z-40'}
         >
           <div onClick={() => setClosedModal(false)} className='  w-[100%] flex justify-end px-5 cursor-pointer' >X</div>
-        {/* {<Login/>? <Signup/>} */}
-       {acc ?<Login Setacc={Setacc}/>:<Signup/>}
+       {acc ?<Login Setacc={Setacc}/>:<Signup Setacc={Setacc}/>}
         </Modal>
       </div>
       < div className='flex  items-center'>

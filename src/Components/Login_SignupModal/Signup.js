@@ -36,7 +36,7 @@ export default function Signup({Setacc}) {
                 </div>
                 <button className='mt-5 font-bold font-Montserrat border-2  py-3 text-white px-4 bg-pinkColor  capitalize'>login</button>
             </form>
-            <div className='cursor-pointer font-medium mt-3 font-Montserrat'  onClick={()=>Setacc()}>you have not account yet </div>
+            <div className='cursor-pointer font-medium mt-3 font-Montserrat' onClick={()=>Setacc(true)}>you have not account yet </div>
         </div>
 
     )
