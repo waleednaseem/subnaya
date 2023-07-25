@@ -11,6 +11,7 @@ import Counter from '@/Components/Counter'
 import Footer from '@/Components/Footer'
 
 
+
 export default function index() {
   const [searchbox,setSearchBox]=useState(false)
   return (
