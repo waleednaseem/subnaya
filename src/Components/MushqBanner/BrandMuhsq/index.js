@@ -1,5 +1,5 @@
 import React from 'react'
-import Products from '../../Products'
+import Products from '@/Components/Products'
 import Carousel from 'react-grid-carousel';
 
 
@@ -110,20 +110,15 @@ export default function index() {
       <h5 className=' text-base  font-Montserrat capitalize mb-2 text-black font-semibold'>Sales and Discounts  </h5>
       <div className='w-[10%] border-t-4 rounded-lg  border-pink-600'>
       </div>
-      <div className='flex m-2 w-full'>
-        <Carousel cols={4} rows={1} gap={10} >
-
-          {arrayProduct.map(n => (
-            <Carousel.Item>
-              <Products n={n} />
-            </Carousel.Item>
-
-          ))}
-
-        </Carousel>
-
-
-      </div>
+      <Carousel cols={4} gap={10} >
+        {arrayProduct.map(n => (
+          <Carousel.Item>
+            <Products n={n} />
+          </Carousel.Item>
+        ))
+        }
+      </Carousel>
+       
     </div>
   )
 }
