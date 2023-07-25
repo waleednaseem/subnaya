@@ -8,7 +8,7 @@ export default function ProductBanner() {
   
   return (
     <div>
- <div className='grid grid-cols-1 bg-blue-gray-600 h-20  mt-2 mb-2 '>
+ <div className='grid grid-cols-1 bg-red-600 h-20  mt-2 mb-2 '>
 
 <BannerLable  BannerLable={"HUMDUM"}/>
         
