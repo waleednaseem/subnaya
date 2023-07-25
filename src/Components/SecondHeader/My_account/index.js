@@ -19,7 +19,7 @@ export default function
 
         <Modal
           isOpen={ClosedModal}
-          className={' m-auto w-[45%]  my-8 h-[70%] overflow-y-auto bg-white p-2 z-40'}
+          className={'m-auto w-[45%] shadow-md  outline-none my-8 h-[70%] overflow-y-auto  shadow-zinc-600 bg-white p-6 z-40'}
         >
           <div onClick={() => setClosedModal(false)} className='  w-[100%] flex justify-end px-5 cursor-pointer' >X</div>
           <div>
