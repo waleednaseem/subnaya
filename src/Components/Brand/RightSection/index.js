@@ -2,6 +2,8 @@ import React from 'react'
 import BrandLable from '../BrandLable'
 import BrandSize from './SelectSize'
 import BrandProduct from './BrandProduct'
+import Slider from '@/Components/Brand/RightSection/Slider'
+
 
 
 export default function index() {
@@ -12,7 +14,8 @@ export default function index() {
           <BrandSize/>
           <hr className='p-4'/>
           <BrandProduct/>
-        
+          <Slider/>
+          
 
           <hr/>
 
