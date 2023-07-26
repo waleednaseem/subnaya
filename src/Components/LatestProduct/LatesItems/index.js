@@ -1,6 +1,8 @@
 import Products from '@/Components/Products';
 import React from 'react'
 import Carousel from 'react-grid-carousel'
+import ProductSlider from '@/Components/ProductSlider'
+
 export default function index() {
   const brand_img1 = 'images/brand-1.jpg';
   const brand_img2 = 'images/brand-2.jpg';
@@ -108,7 +110,7 @@ export default function index() {
     <div className='w-[100%] border-4  p-2 bg-white  rounded-lg py-5' >
       <h5 className=' text-lg  text-center font-Montserrat uppercase mt-4 mb-6 text-black font-semibold'>latest product </h5>
 
-      <Carousel cols={4} rows={1} gap={10}  >
+      {/* <Carousel cols={4} rows={1} gap={10}  >
 
         {
           arrayProduct.map((n, index) => (
@@ -117,7 +119,10 @@ export default function index() {
             </Carousel.Item>
           ))
         }
-      </Carousel>
+      </Carousel> */}
+
+<ProductSlider product={arrayProduct} value_cols={4}/>
+
     </div>
   )
 }

@@ -44,7 +44,7 @@ export default function Slider() {
   return (
       <div> 
         
-        <ProductSlider product={array} />
+        <ProductSlider product={array} value_cols={4}/>
       </div>
 
   )
