@@ -6,6 +6,7 @@ export default function index({ x,Carousel }) {
       <img src={x.image} className='h-72 block  overflow-hidden object-cover' />
       <div className='text-sm   h-80  overflow-hidden  text-contentColor'>
         <p>{x.content}</p>
+         
       </div>
     </div>
   )

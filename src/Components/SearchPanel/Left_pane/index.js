@@ -7,7 +7,6 @@ export default function index() {
             <div className='w-[30%] border-t-4 rounded-lg  border-pink-600'>
 
             </div>
-
             <ul className='capitalize mb-3  text-sm font-Montserrat  text-contentColor font-normal'>
                 <li className='leading-7'>sha Unstitched Luxe Atelier Edit 2 2023</li>
                 <li className='leading-7'>Safwa Digital Printed Cotton Kurti Collection 2023 Vol-04</li>
