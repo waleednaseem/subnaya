@@ -1,5 +1,6 @@
 import React from 'react'
 import BottomSlide from '../BottomSlide';
+import Products from '@/Components/Products'
 
 import Carousel from 'react-grid-carousel'
 export default function index() {
@@ -60,22 +61,9 @@ export default function index() {
             <div className='flex m-2 w-full'>
                 <Carousel cols={2} rows={1} gap={10} >
                     {
-                        arrayProduct.map((item,index) => (
+                        arrayProduct.map((n,index) => (
                                 <Carousel.Item>
-                                <div key={index}>
-                                    <img src={item.image} className='w-[100%] h-96 object-cover rounded-sm' />
-                                </div>
-                                <div className=' text-xs text-contentColor  font-medium font-Montserrat mt-1'>
-                                    <p>{item.content}</p>
-
-                                    <div className=' flex  justify-between  mt-2'>
-                                        <del>{item.FirstPrice}
-                                        </del>
-                                        <strong>
-                                            {item.SecondPrice}
-                                        </strong>
-                                    </div>
-                                </div>
+                                <Products n={n}/>
                             </Carousel.Item> 
                         ))
                     }
