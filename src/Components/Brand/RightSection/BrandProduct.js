@@ -103,25 +103,15 @@ export default function Product() {
     //   </div>
     // </div>
 
-      <ProductBanner />
-      <div className='gap-4  text-center grid  grid-cols-2 md:grid-cols-4 xl:grid-cols-4 sm:grid-cols-3'>
-        {
-          data.map(b => <div>
-            <div> <Products image={b.image} content={b.content} FirstPrice={b.FirstPrice} SecondPrice={b.SecondPrice} />
-            </div>
-          </div>)
-        }
-      </div>
-=======
-      {Links.slice(pageNo,pageItems).map(x=>(
-        <div>
-          {x.id}
-        </div>
-      ))}
-      <button onClick={()=>(setPageNo(pageNo+1), setpageItems(pageItems+2))}>next page</button>
-      <button onClick={()=>(setPageNo(pageNo-1),setpageItems(pageItems-2))}>previous page</button>
->>>>>>> 40882481f92c4d7ab4254f2eed92801e75289e12
-    </div>
-  )
-}
+//     <div>
+//       {Links.slice(pageNo,pageItems).map(x=>(
+//         <div>
+//           {x.id}
+//         </div>
+//       ))}
+//       <button onClick={()=>(setPageNo(pageNo+1), setpageItems(pageItems+2))}>next page</button>
+//       <button onClick={()=>(setPageNo(pageNo-1),setpageItems(pageItems-2))}>previous page</button>
+//     </div>
+//   )
+// }
         
