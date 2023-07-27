@@ -1,6 +1,7 @@
 import React from 'react'
 import BottomSlide from '../BottomSlide';
-import Products from '@/Components/Products'
+import Products from '@/Components/Products';
+import ProductSlider from '@/Components/ProductSlider'
 
 import Carousel from 'react-grid-carousel'
 export default function index() {
@@ -59,7 +60,7 @@ export default function index() {
             <div className='w-[10%] border-t-4 rounded-lg  border-pink-600'>
             </div>
             <div className='flex m-2 w-full'>
-                <Carousel cols={2} rows={1} gap={10} >
+                {/* <Carousel cols={2} rows={1} gap={10} >
                     {
                         arrayProduct.map((n,index) => (
                                 <Carousel.Item>
@@ -67,7 +68,9 @@ export default function index() {
                             </Carousel.Item> 
                         ))
                     }
-                </Carousel>
+                </Carousel> */}
+
+                 <ProductSlider product={arrayProduct} value_cols={2}/>
             </div>
             <BottomSlide/>
         </div>
