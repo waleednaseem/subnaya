@@ -12,8 +12,6 @@ export default function index() {
           <BrandSize/>
           <hr className='p-4'/>
           <BrandProduct/>
-        
-
           <hr/>
 
     </div>

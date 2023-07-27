@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 
-export default function counter() {
+
+export default function CounterApp() {
   const [count, setCount] = useState(0)
 
   const PlusCounter = () => {
@@ -21,6 +22,7 @@ export default function counter() {
       <button className=' mx-3 bg-deep-orange-400  p-3  text-white'    onClick={()=>PlusCounter()} >Plus</button>
       <button className=' mx-3 bg-deep-orange-400  p-3  text-white'    onClick={()=>MinusCounter()} >Minus</button>
       <button className=' mx-3 bg-deep-orange-400  p-3  text-white'    onClick={()=>ResetValue()} >Reset</button>
+    
     </div>
   )
 }
