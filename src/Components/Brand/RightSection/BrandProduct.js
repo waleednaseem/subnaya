@@ -5,9 +5,8 @@ import Data from '@/Components/Brand/Data'
 import Pagination from '@/Components/Brand/Pagination'
 import { TbMathGreater } from 'react-icons/tb'
 
-export default function Product() {
+export default function Product({pageItems}) {
   const [pageNo,setPageNo]=useState(0)
-  const [pageItems,setpageItems]=useState(2)
 
 
   const Links = [
@@ -53,7 +52,7 @@ export default function Product() {
 
   return (
     <div>
-  <div>
+  {/* <div>
       <div className='gap-4  text-center grid  grid-cols-2 md:grid-cols-4 xl:grid-cols-4 sm:grid-cols-3'>
         {
           Data.array.map(e => <div>
@@ -76,20 +75,20 @@ export default function Product() {
 
 
      
-    </div >
+    </div > */}
 
     
       
 
       <div className='grid grid-cols-4 gap-4'>
-        {Data.array.slice(pageNo * pageItems, (pageNo + 2) * pageItems).map((e, index) => (
+        {Data.array.slice(pageNo * pageItems, (pageNo + 1) * pageItems).map((e, index) => (
           <div key={index}>
             <img src={e.image} alt={`Image ${index + 1}`} />
           </div>
         ))}
       </div>
       <div  className=' inline-flex w-[100%] justify-center gap-2 p-2'>
-        {Links.slice(pageNo * pageItems, (pageNo + 1) * pageItems).map((x) => (
+        {Data.array.slice(pageNo * pageItems, (pageNo + 1) * pageItems).map((x) => (
           <div key={x.id}>
             {x.id}
           </div>
