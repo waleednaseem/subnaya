@@ -1,7 +1,16 @@
 import React from 'react'
+import Category from './Category'
+import Price from './Price'
+import SearchBrands from './SearchBrands'
 
 export default function index() {
   return (
-    <div className='bg-gray-300 w-[100%]'>LeftSection</div>
+    <div>LeftSection
+    
+    <Category/>
+    <Price/>
+    <SearchBrands/>
+    
+    </div>
   )
 }
