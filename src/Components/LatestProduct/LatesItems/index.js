@@ -4,7 +4,7 @@ import Carousel from 'react-grid-carousel'
 import ProductSlider from '@/Components/ProductSlider'
 
 export default function index() {
-  const brand_img1 = 'images/brand-1.jpg';
+  const brand_img1 = 'ibranmages/d-1.jpg';
   const brand_img2 = 'images/brand-2.jpg';
   const brand_img3 = 'images/brand-3.jpg';
   const brand_img4 = 'images/brand-4.jpg';

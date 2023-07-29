@@ -3,16 +3,10 @@ import { BiMinusCircle } from "react-icons/bi";
 import { BiPlusCircle } from "react-icons/bi";
 import {PiTruckFill} from "react-icons/pi";
 import {AiFillCheckCircle} from "react-icons/ai"
-import { useSpeedDial } from "@material-tailwind/react";
+// import { useSpeedDial } from "@material-tailwind/react";
 
 export default function index() {
-  const [addCount , setaddCount] =  useState()
-
-  function handleValidation(e) {
-    setaddCount({...addCount, 
-       [e.target.name]:e.target.value
-    });
-}
+  const [addCount , setaddCount] =  useState(1)
   const  MinusIcon=()=>{
    setaddCount(addCount -1)
   }
@@ -63,12 +57,10 @@ export default function index() {
               <BiMinusCircle onClick={()=> MinusIcon()}/>
             </span>
             <input
-              className=" bg-transparent outline-none  w-[20%] text-center"
-              type="text"
-              name="qty"
-              id="qty"
-              value={1} 
-            ></input>
+              className=" bg-transparent outline-none  w-[30%] text-center"
+              value={addCount}
+              id="qty" onChange={(e)=>setaddCount(e.target.value)} ></input>
+           
             <span className=" text-3xl text-black">
               <BiPlusCircle onClick={()=> PlusIcon()}/>
             </span>
