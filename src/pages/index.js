@@ -8,11 +8,8 @@ import JofaHeader from '@/Components/JofaHeader'
 import ProductComponent from '@/Components/ProductComponent'
 import LatestProduct from '@/Components/LatestProduct'
 import Counter from '@/Components/Counter'
-import ProductCart from '@/Components/ProductCart'
 import Footer from '@/Components/Footer'
 // import TestProps from '@/Components/TestProps'
-
-
 
 export default function index() {
   const [searchbox,setSearchBox]=useState(false)
@@ -29,7 +26,6 @@ export default function index() {
       <ProductComponent/>
       <LatestProduct/>
       <Counter/>
-      <ProductCart/>
       <Footer/>
       {/* <TestProps /> */}
     </div>
