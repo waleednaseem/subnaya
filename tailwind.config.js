@@ -26,7 +26,8 @@ module.exports = withMT({
         textColor: "var(--text-color)",
         pinkColor: "var(--pink-color)",
         grayColor: "var( --gray-color)",
-        contentColor:"var(--contentColor)"
+        contentColor:"var(--contentColor)",
+        IconColor:"var(--IconColor)"
       },
       fontFamily :{
         Montserrat: ["Montserrat", "sans-serif"],
