@@ -5,7 +5,7 @@ import ProductRightPanel from '../ProductCart/ProductRightPanel'
 
 export default function index() {
   return (
-    <div className='flex' >
+    <div className='flex  my-4' >
         <DiscriptionPanel/>
         <ProductMiddlePanel/>
         <ProductRightPanel/>

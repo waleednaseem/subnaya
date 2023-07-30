@@ -5,12 +5,11 @@ import SearchBrands from './SearchBrands'
 
 export default function index() {
   return (
-    <div>LeftSection
-    
+    <div>
+      {/* LeftSection */}
     <Category/>
     <Price/>
     <SearchBrands/>
-    
     </div>
   )
 }

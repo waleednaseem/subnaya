@@ -12,10 +12,7 @@ export default function Price() {
             </lable>
             <div>
             <input className='border border-gray-500 m-2 w-16' type="text" placeholder='From'/>
-
-
             </div>
-
           </div>
           <div>
           <lable>
@@ -23,17 +20,11 @@ export default function Price() {
             </lable>
             <div>
             <input className='border border-gray-500 m-2 w-16' type="text" placeholder='From'/>
-
-
             </div>
 
           </div>
-          
-
+        
         </div>
- 
-
-
 
     </div>
     

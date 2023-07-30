@@ -9,7 +9,6 @@ import ProductComponent from '@/Components/ProductComponent'
 import LatestProduct from '@/Components/LatestProduct'
 import Counter from '@/Components/Counter'
 import Footer from '@/Components/Footer'
-// import TestProps from '@/Components/TestProps'
 
 export default function index() {
   const [searchbox,setSearchBox]=useState(false)
@@ -27,7 +26,6 @@ export default function index() {
       <LatestProduct/>
       <Counter/>
       <Footer/>
-      {/* <TestProps /> */}
     </div>
   )
 }
