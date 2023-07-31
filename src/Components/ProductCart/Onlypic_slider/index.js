@@ -3,7 +3,7 @@ import ProductSlider from '@/Components/ProductSlider'
 // import Carousel from 'react-grid-carousel';
 
 
-export default function index({picSlider, slide_cols}) {
+export default function index() {
   const slider_picarray = [
     {
       image: "images/brand-1.jpg",
