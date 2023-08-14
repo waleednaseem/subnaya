@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "@/Components/Header"
+import Header from "@/Components/Header";
+import  Footer from "@/Components/Footer"
 
 
 export default function index({ children }) {
@@ -9,7 +10,7 @@ export default function index({ children }) {
         <Header/>
       </div>
       {children}
-      <div>i am footer</div>
+      <div><Footer/></div>
     </div>
   );
 }
