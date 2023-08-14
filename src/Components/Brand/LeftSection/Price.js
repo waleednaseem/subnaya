@@ -31,7 +31,7 @@ export default function Price() {
           
 
         </div>
- 
+     <button className='bg-black text-white p-2 text-sm  justify-center flex mx-12'> Price Filter </button>
 
 
 
