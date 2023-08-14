@@ -1,4 +1,6 @@
 import React from "react";
+import Onlypic_slider from '@/Components/ProductCart/Onlypic_slider'
+
 
 export default function index() {
   let Cartarr = [
@@ -58,6 +60,9 @@ export default function index() {
           </div>
         </div>
       </div>
+  
+      <Onlypic_slider/>
+
     </div>
   ));
 }

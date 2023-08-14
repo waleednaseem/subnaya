@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 import { BiMinusCircle } from "react-icons/bi";
 import { BiPlusCircle } from "react-icons/bi";
-import {PiTruckFill} from "react-icons/pi";
-import {AiFillCheckCircle} from "react-icons/ai"
+import { PiTruckFill } from "react-icons/pi";
+import { AiFillCheckCircle } from "react-icons/ai";
 // import { useSpeedDial } from "@material-tailwind/react";
 
 export default function index() {
-  const [addCount , setaddCount] =  useState(1)
-  const  MinusIcon=()=>{
-   setaddCount(addCount -1)
-  }
-  const PlusIcon=()=>{
-    setaddCount(addCount +1)
-   }
- 
+  const [addCount, setaddCount] = useState(1);
+  const MinusIcon = () => {
+    setaddCount(addCount - 1);
+  };
+  const PlusIcon = () => {
+    setaddCount(addCount + 1);
+  };
+
   return (
+    //  FIRST DIV
     <div className="w-[35%] bg-bgprimary rounded-lg p-4">
       <div className=" mt-3 p-2 bg-white rounded-sm relative">
         <div className="flex">
@@ -28,6 +29,7 @@ export default function index() {
           </label>
         </div>
       </div>
+      {/* //  SECOND  DIV */}
 
       <div className=" mt-7">
         <h4 className=" text-orange-900 text-center font-bold pb-2 text-3xl">
@@ -50,19 +52,22 @@ export default function index() {
           </div>
         </div>
       </div>
+      {/* THIRD DIV */}
       <div>
         <div className="border w-[40%] m-auto mt-3 p-2">
           <div className="flex justify-center  align-middle">
             <span className=" text-3xl">
-              <BiMinusCircle onClick={()=> MinusIcon()}/>
+              <BiMinusCircle onClick={() => MinusIcon()} />
             </span>
             <input
               className=" bg-transparent outline-none  w-[30%] text-center"
               value={addCount}
-              id="qty" onChange={(e)=>setaddCount(e.target.value)} ></input>
-           
+              id="qty"
+              onChange={(e) => setaddCount(e.target.value)}
+            ></input>
+
             <span className=" text-3xl text-black">
-              <BiPlusCircle onClick={()=> PlusIcon()}/>
+              <BiPlusCircle onClick={() => PlusIcon()} />
             </span>
           </div>
         </div>
@@ -71,24 +76,26 @@ export default function index() {
         </button>
       </div>
 
+      {/* FOURTH DIV */}
       <div className="mt-4 p-2 bg-white rounded-sm relative">
         <div className="flex justify-around">
           <div className=" relative ">
-          <span className=" text-3xl"><PiTruckFill/></span>
+            <span className=" text-3xl">
+              <PiTruckFill />
+            </span>
             <div className=" absolute text-green-400 text-sm  bg-white  top-0  left-3 ">
-
-            <AiFillCheckCircle/>
+              <AiFillCheckCircle />
             </div>
           </div>
-       
-
           <label className=" uppercase  text-contentColor  my-2 font-bold  text-xs font-Montserrat">
             Est. Shipping Date
-            <span  className=" bg-black text-white p-2  ml-2" >01, Aug - 03, Aug 23</span>
+            <span className=" bg-black text-white p-2  ml-2">
+              01, Aug - 03, Aug 23
+            </span>
           </label>
         </div>
       </div>
-
+      
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import BrandMuhsq from './BrandMuhsq'
+import BrandMuhsq from './Brand'
 import RightSlide from './RightSlide'
 
 export default function index() {

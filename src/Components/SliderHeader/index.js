@@ -1,10 +1,10 @@
 import React from 'react'
-import JofaSlide from  './JofaSlide'
+import Topslide from  './Topslide'
 
 export default function index() {
   return (
     <div>
-        <JofaSlide/>
+        <Topslide/>
     </div>
   )
 }
