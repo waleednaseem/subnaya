@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Radio_button( {label,className,type,radio_img}) {
+export default function Radio_button( {label,className,type,radio_img,value,name}) {
   return (
     <div className='flex '>
     <div> 
-    <input className={`border rounded-md p-1 border-gray-600 ${className && className}`} type={type && type}  />
+    <input className={`border rounded-md p-1 border-gray-600 ${className && className}`} type={type && type} value={value && value} name={name && name} />
 
     </div>
       <div> 
