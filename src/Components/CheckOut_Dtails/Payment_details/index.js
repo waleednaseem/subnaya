@@ -7,6 +7,7 @@ import countryOptions from '@/Components/CheckOut_Dtails/Select_option/SelectOpt
 import Radion_button from '@/Input_Components/Radio_button/Radio_button'
 
 export default function index({ setState }) {
+
   return (
 
     <div className=" w-1/2  bg-white p-8 my-8 mx-auto rounded-2xl shadow-lg">
@@ -14,19 +15,16 @@ export default function index({ setState }) {
       <Lable_button text={"2 Shipping Method"} />
       <form>
         <div className=' p-3'>
-          <Radion_button label={"Standard Shipping Rs. 100.00"} type={'radio'}value={"html"}  name={"html"}/>
-        <Radion_button label={"Standard Shipping + 'Treatment for All' with Indus (Rs.150) Rs. 250.00"} type={'radio'} value={"css"} name={"html"} />
-         
+          <Radion_button label={"Standard Shipping Rs. 100.00"} type={'radio'} value={"html"} name={"html"} />
+          <Radion_button label={"Standard Shipping + 'Treatment for All' with Indus (Rs.150) Rs. 250.00"} type={'radio'} value={"css"} name={"html"} />
         </div>
       </form>
-
-
       <Lable_button text={"3 Payment Method"} />
       <div className='border-dashed border-b border-indigo-600 p-3'>
-        <Radion_button label={"VISA / MASTER CARD"} type={'radio'} radio_img={'images/payment.png'} className={" border"} name={"paymentMethod"}/>
+        <Radion_button label={"VISA / MASTER CARD"} type={'radio'} radio_img={'images/payment.png'} className={" border"} name={"paymentMethod"} />
       </div>
       <div className='border-dashed border-b border-indigo-600 p-3'>
-        <Radion_button label={"CASH ON DELIVERY"} type={'radio'} radio_img={'images/payment.png'} className={" border"} name={"paymentMethod"}/>
+        <Radion_button label={"CASH ON DELIVERY"} type={'radio'} radio_img={'images/payment.png'} className={" border"} name={"paymentMethod"} />
       </div>
       <div className='border-dashed border-b border-indigo-600 p-3'>
         <Radion_button label={"BANK TRANSFER"} type={'radio'} radio_img={'images/payment.png'} className={" border"} name={"paymentMethod"} />
