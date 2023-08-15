@@ -1,4 +1,4 @@
-import '@/styles/globals.css'
+import '@/styles/globals.scss'
 import { ThemeProvider } from "@material-tailwind/react";
 
 export default function App({ Component, pageProps }) {
