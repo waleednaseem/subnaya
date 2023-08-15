@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #2e180e;
+  --secondary-color: #1c140a;
+  --tertiary-color: #8c7c5c;
+  --quaternary-color: #4e3e35;
+  --quinary-color: #1c1c10;
+  --bg-color: #cdcdd1;
+  --pink-color: #ed2590;
+  --gray-color: #d1d5db;
+  --contentColor: #333;
+  --IconColor: "#999";
+}
+.header {
+  @apply bg-blue-800;
+  .text-color {
+    @apply text-white text-xl;
+  }
+}
