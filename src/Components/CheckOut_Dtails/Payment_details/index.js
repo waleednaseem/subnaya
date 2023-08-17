@@ -10,7 +10,7 @@ export default function index({ setState }) {
 
   return (
 
-    <div className=" w-1/2  bg-white p-8 my-8 mx-auto rounded-2xl shadow-lg">
+    <div className="paymentDetais">
 
       <Lable_button text={"2 Shipping Method"} />
       <form>

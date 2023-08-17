@@ -17,8 +17,22 @@
   --IconColor: "#999";
 }
 .header {
-  @apply bg-blue-800;
+  @apply bg-blue-800 ;
   .text-color {
     @apply text-white text-xl;
   }
+}
+
+//Alia
+.AddtoCardTable{
+  @apply w-1/2 bg-white p-8 my-8 mx-auto rounded-2xl shadow-lg;
+}
+.Login_page{
+  @apply w-1/3  bg-white p-8 my-8 mx-auto rounded-2xl shadow-lg;
+  .Div_one {
+    @apply  flex justify-between;
+  }
+}
+.paymentDetais{
+  @apply  w-1/2  bg-white p-8 my-8 mx-auto rounded-2xl shadow-lg
 }

@@ -24,7 +24,7 @@ export default function Index() {
   };
 
   return (
-    <div className="w-1/2 bg-white p-8 my-8 mx-auto rounded-2xl shadow-lg">
+    <div className="AddtoCardTable">
       <table className='border border-black w-full'>
         <thead>
           <tr className='border border-black'>

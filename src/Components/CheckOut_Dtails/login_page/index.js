@@ -7,9 +7,9 @@ import countryOptions from '@/Components/CheckOut_Dtails/Select_option/SelectOpt
 
 export default function index({setState}) {
     return (
-        <div className=" w-1/3  bg-white p-8 my-8 mx-auto rounded-2xl shadow-lg">
+        <div className="Login_page">
              <Lable_button text={"Login With"} />
-            <div className=' flex justify-between'>
+            <div className='Div_one'>
                 <Button image={'images/facebook_icon.png'} text={'facebook'} color={'bg-red-400'} />
                 <Button image={'images/facebook_icon.png'} text={'Google'} />
                 <Button image={'images/facebook_icon.png'} text={'email'} />
