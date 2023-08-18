@@ -5,11 +5,13 @@ import Logo_pane from "../SecondHeader/Logo_pane";
 
 export default function index({ setSearchBox }) {
   return (
-    <div className="flex justify-center items-center flex-col">
-      <div className="w-full p-2 flex justify-between ">
-        <Logo_pane />
+    <div className="bottom_header ">
+    <div className=" container  mx-auto">
+      <div className="header_navbar">
+      <Logo_pane />
         <Search_pane setSearchBox={setSearchBox} />
         <My_account />
+      </div>
       </div>
     </div>
   );

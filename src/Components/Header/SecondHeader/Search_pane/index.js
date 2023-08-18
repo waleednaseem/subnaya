@@ -4,10 +4,9 @@ import { BsSearch } from "react-icons/bs";
 export default function index({ setSearchBox }) {
   const [content, setContent] = useState("");
   return (
-    <div>
-      <div className="flex  border border-gray-400 rounded-full items-center px-6 py-1  w-[100%]">
+    
+      <div className="search_bar">
         <input
-          className="required  w-full outline-none"
           onBlur={()=>setSearchBox(false)}
           onFocus={() => setSearchBox(true)}
           onChange={(e) => {
@@ -15,10 +14,10 @@ export default function index({ setSearchBox }) {
             setSearchBox(true)
           }}
         />
-        <span>
+        <span className="search_icon">
           <BsSearch></BsSearch>
         </span>
       </div>
-    </div>
+
   );
 }

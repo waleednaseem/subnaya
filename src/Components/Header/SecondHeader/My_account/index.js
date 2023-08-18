@@ -10,43 +10,42 @@ export default function index() {
   const Menus = ["login", "track your order", "my wish list"];
   const [open, Setopen] = useState(false);
   const [acc, Setacc] = useState(true);
-  const currencies=['pkr','usd','usdt']
+  const currencies = ["pkr", "usd", "usdt"];
   return (
     <div>
       <div>
         <Modal
           isOpen={ClosedModal}
           className={
-            "m-auto w-[45%] shadow-md  outline-none my-4 h-[70%] overflow-y-auto  shadow-zinc-600 bg-white p-6 z-40"
+            "m-auto w-[45%] shadow-md outline-none my-4 h-[70%] overflow-y-auto  shadow-zinc-600 bg-white p-6 z-40"
           }
         >
           <div
+            className="w-[100%] flex justify-end px-5 cursor-pointer"
             onClick={() => setClosedModal(false)}
-            className="  w-[100%] flex justify-end px-5 cursor-pointer"
           >
             X
           </div>
           {acc ? <Login Setacc={Setacc} /> : <Signup Setacc={Setacc} />}
         </Modal>
       </div>
-      <div className="flex  items-center">
-        <ul className="capitalize  relative cursor-pointer font-Montserrat font-medium text-base text-contentColor pr-4">
+      <div className="socil_links">
+        <ul>
           <li>
             <a
-              className="text-gray-950  inline-flex"
+              className="user_info"
               onClick={() => Setopen(!open)}
             >
-              <FaUserAlt className="mr-1.5" /> MY ACCOUNT{" "}
-              <BsChevronDown className="mr-1.5	" />
+              <FaUserAlt className="mr-1.5" /> My account
+              <BsChevronDown className=" mt-1 ml-1  text-sm	" />
             </a>
             {open && (
-              <ul className=" bg-black text-white p-4  z-10 absolute">
+              <ul className="drop_down">
                 {Menus.map((menu, i) => (
                   <li
                     onClick={() =>
                       menu == "login" && (setClosedModal(true), Setopen(false))
                     }
-                    className="border-b-2 pb-1   mb-2 leading-9  cursor-pointer text-sm"
                     key={i}
                   >
                     {menu}
@@ -57,20 +56,15 @@ export default function index() {
           </li>
         </ul>
 
-        <ul className="font-Montserrat font-medium text-base text-contentColor pr-2">
-          <li>
-            <a className="text-gray-950 "> PKR</a>
-          </li>
+        <ul className="currency_unit">
+          <li><a> PKR<BsChevronDown className="text-sm ml-2"/></a></li>
         </ul>
-        <ul className="flex font-Montserrat font-medium text-base text-contentColor">
-          <li>
-            <a className="inline-flex">
-              <BiSolidCartAlt className="mr-1.5	" />
-              Cart
-            </a>
+        <ul className="pro_cart text-contentColor">
+          <li className="mr-2">
+            <a><BiSolidCartAlt className="add_cart"/>Cart  </a>
           </li>
           <li>
-            <a className="text-gray-950 ml-1.5 pr-3">0</a>
+            <a className="qty">0</a>
           </li>
         </ul>
       </div>
