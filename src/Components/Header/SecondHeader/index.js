@@ -8,7 +8,7 @@ export default function index() {
     <div>
         <Logo_pane/>
         <My_account/>
-        <Search_pane/>
+        {/* <Search_pane/> */}
     </div>
   )
 }

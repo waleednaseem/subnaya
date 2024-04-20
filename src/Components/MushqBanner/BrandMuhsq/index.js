@@ -108,18 +108,11 @@ export default function index() {
   ]
 
   return (
-    <div className='w-[80%] border-4  p-2 bg-white  rounded-lg py-5' >
-      <h5 className=' text-base  font-Montserrat capitalize mb-2 text-black font-semibold'>Sales and Discounts  </h5>
-      <div className='w-[10%] border-t-4 rounded-lg  border-pink-600'>
-      </div>
-      {/* <Carousel cols={4} gap={10} >
-        {arrayProduct.map(n => (
-          <Carousel.Item>
-            <Products n={n} />
-          </Carousel.Item>
-        ))
-        }
-      </Carousel> */}
+    <div className='w-[80%] border-4 flex justify-center items-center' >
+      {/* <h5 className=' text-base  font-Montserrat capitalize mb-2 text-black font-semibold'>Sales and Discounts  </h5> */}
+      {/* <div className='w-[10%] border-t-4 rounded-lg  border-pink-600'>
+      </div> */}
+      
          <ProductSlider product={arrayProduct} value_cols={4}/>
     </div>
   )

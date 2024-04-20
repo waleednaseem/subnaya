@@ -6,10 +6,10 @@ export default function index() {
   return (
     <div>
       <div className='flex'>
-      <BrandMuhsq/>
-        <RightSlide/>
+        <BrandMuhsq />
+        <RightSlide />
       </div>
-     
+
     </div>
   )
 }
